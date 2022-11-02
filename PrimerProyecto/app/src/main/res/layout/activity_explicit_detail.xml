@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ejercicios_clase.ExplicitDetailActivity">
+
+   <TextView
+       android:id="@+id/txtViewName"
+       android:layout_centerInParent="true"
+       android:layout_alignParentTop="true"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="20dp"
+       android:text="Nombre"
+       android:textSize="25dp"/>
+    <TextView
+        android:id="@+id/txtViewLastName"
+        android:layout_marginTop="80dp"
+        android:layout_below="@id/txtViewName"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apellido"
+        android:textSize="25dp"/>
+    <TextView
+        android:id="@+id/txtViewAge"
+        android:layout_below="@id/txtViewLastName"
+        android:layout_marginTop="140dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edad"
+        android:textSize="25dp"/>
+
+
+    <TextView
+        android:id="@+id/txtViewNameUser"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Nombre"
+        android:textSize="25dp"/>
+    <TextView
+        android:id="@+id/txtViewLastNameUser"
+        android:layout_below="@id/txtViewNameUser"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apellido"
+        android:textSize="25dp"/>
+    <TextView
+        android:id="@+id/txtViewAgeUser"
+        android:layout_below="@id/txtViewLastNameUser"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edad"
+        android:textSize="25dp"/>
+
+    <TextView
+        android:id="@+id/txtViewNameEdit"
+        android:layout_below="@id/txtViewAgeUser"
+        android:paddingTop="100dp"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre"
+        android:textSize="25dp"/>
+
+
+</RelativeLayout>
