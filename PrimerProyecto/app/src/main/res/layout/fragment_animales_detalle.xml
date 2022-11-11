@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ejercicio_final.fragments.AnimalesDetalleFragment"
+    android:background="@color/cardview_shadow_end_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@color/gray_light">
+
+        <TextView
+            android:id="@+id/txtDetAnimalName"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="29sp"
+            android:layout_height="wrap_content"
+            android:text="Nombre" />
+
+        <ImageView
+            android:id="@+id/ivDetAnimalImage"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_height="200dp"
+            android:src="@drawable/img_logo"/>
+
+        <CheckBox
+            android:id="@+id/chkEnfermedad"
+            android:layout_marginTop="10dp"
+            android:text="¿Tiene alguna enfermedad?"
+            android:layout_centerHorizontal="true"
+            android:checked="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <RadioGroup
+            android:layout_marginTop="10dp"
+            android:id="@+id/rgSexAnimal"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/radMacho"
+                android:text="Macho"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <RadioButton
+                android:id="@+id/radHembra"
+                android:text="Hembra"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RadioGroup>
+
+        <Spinner
+            android:id="@+id/spinnerHabitat"
+            android:layout_centerHorizontal="true"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btSendAnimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Enviar" />
+
+    </LinearLayout>
+</FrameLayout>

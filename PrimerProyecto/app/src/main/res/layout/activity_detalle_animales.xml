@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ejercicio_final.MuestraDatosPersonalesActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Datos enviados"
+        android:textSize="45sp"
+        android:background="@color/gray_light"/>
+
+    <TextView
+        android:id="@+id/txtEnfermedad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:text="Enfermedad: "/>
+
+    <TextView
+        android:id="@+id/txtSexoAnimal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:text="Sexo: "/>
+
+    <TextView
+        android:id="@+id/txtHabitat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:text="Habitat: "/>
+
+</LinearLayout>

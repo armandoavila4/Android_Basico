@@ -10,12 +10,63 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PrimerProyecto">
         <activity
-            android:name=".ejercicio_final.FormularioActivity"
+            android:name=".ejercicio_final.fragments.DetalleAnimalesActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ejercicio_final.fragments.ListaAnimalesManagerActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".fragments.FragmentManagerActivity"
+            android:exported="true">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".fragments.FragmentActivity"
+            android:exported="true">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ejercicios_clase.layouts.TabsActivity"
+            android:exported="true">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ejercicios_clase.layouts.RecyclerViewActivity"
+            android:exported="true">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ejercicios_clase.layouts.RelativeActivity"
+            android:exported="true">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ejercicio_final.FormularioActivity"
+            android:exported="true">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -35,7 +86,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".ejercicios_clase.FrameLayoutActivity"
+            android:name=".ejercicios_clase.layouts.FrameLayoutActivity"
             android:exported="true" />
         <activity
             android:name=".ejercicios_clase.ExplicitDetailActivity"

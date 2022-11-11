@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ejercicios_clase.layouts.RelativeActivity">
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:text="@string/relative_title"
+        android:layout_centerHorizontal="true"
+        android:textSize="10sp"
+        android:textColor="@color/purple_200"
+        android:layout_marginTop="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_centerInParent="true"
+        android:hint="@string/relative_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btSend"
+        android:text="@string/relative_button"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/etName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <ImageButton
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btSend"
+        android:src="@mipmap/ic_launcher_round"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/imgAndroid"
+        android:layout_marginTop="20dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <CheckBox
+        android:id="@+id/chkCredit"
+        android:layout_below="@+id/imgAndroid"
+        android:layout_marginTop="10dp"
+        android:text="@string/relative_checkbox"
+        android:layout_centerHorizontal="true"
+        android:checked="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <RadioGroup
+        android:layout_marginTop="10dp"
+        android:id="@+id/rgSex"
+        android:layout_below="@id/chkCredit"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radMas"
+            android:text="Masculino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <RadioButton
+            android:id="@+id/radFem"
+            android:text="Femenino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RadioGroup>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_below="@+id/rgSex"
+        android:layout_centerHorizontal="true"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"/>
+
+
+
+
+</RelativeLayout>
