@@ -10,6 +10,33 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PrimerProyecto">
         <activity
+            android:name=".ejercicios_clase.almacenamiento.FileActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ejercicios_clase.almacenamiento.PrefsActivity"
+            android:exported="true">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".fragments.bottomNavigation.BottomNavigationActivity"
+            android:exported="true">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".ejercicio_final.fragments.DetalleAnimalesActivity"
             android:exported="false">
             <meta-data
@@ -19,12 +46,6 @@
         <activity
             android:name=".ejercicio_final.fragments.ListaAnimalesManagerActivity"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />

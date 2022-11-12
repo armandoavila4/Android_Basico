@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ejercicios_clase.almacenamiento.PrefsActivity"
+    android:orientation="vertical"
+    android:background="@color/gray_light">
+
+    <TextView
+        android:id="@+id/txtPrefsData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Datos:"
+        android:textSize="30sp"
+        />
+
+    <EditText
+        android:id="@+id/etxtPrefsData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <Button
+        android:id="@+id/btnPrefsSave"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:drawableLeft="@drawable/ic_camera"
+        android:text="Guardar"
+        />
+
+    <Button
+        android:id="@+id/btnPrefsDelete"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_kayaking"
+        android:text="Eliminar"
+        />
+
+</LinearLayout>

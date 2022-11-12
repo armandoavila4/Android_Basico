@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/option_camara"
+        android:icon="@drawable/ic_camera"
+        android:title="Cámara"/>
+
+    <item android:id="@+id/option_keyboard"
+        android:icon="@drawable/ic_keyboard"
+        android:title="Teclado"/>
+
+    <item android:id="@+id/option_kayaking"
+        android:icon="@drawable/ic_kayaking"
+        android:title="Kayak"/>
+</menu>
