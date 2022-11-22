@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable
+            name="user"
+            type="com.jaae.mvvmandroidexample.model.entities.User" />
+    </data>
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        tools:context=".view.fragments.DetalleFragment">
+
+        <!-- TODO: Update blank fragment layout -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ivUserDetalle"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_above="@+id/tvName"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="25dp"
+                android:src="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/tvLastname"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="20dp"
+                android:text="@{@string/detail_name(user.name)}"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tvLastname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@{@string/detail_lastname(user.lastname)}"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tvAge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvLastname"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="20dp"
+                android:text="@{@string/detail_age(user.age)}"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+    </ScrollView>
+</layout>
