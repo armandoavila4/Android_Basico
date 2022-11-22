@@ -12,13 +12,29 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PrimerProyecto">
         <activity
-            android:name=".ejercicios_clase.almacenamiento.SqliteActivity"
+            android:name=".ejercicio_final.almacenamiento.DetalleAnimalSqlActivity"
+            android:exported="false"
+            android:parentActivityName=".ejercicio_final.almacenamiento.AnimalesSqlActivity" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ejercicio_final.almacenamiento.AnimalesSqlActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ejercicios_clase.almacenamiento.SqliteActivity"
+            android:exported="true">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />

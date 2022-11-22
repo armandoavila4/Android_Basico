@@ -8,6 +8,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.jaae.primerproyecto.R
+import com.jaae.primerproyecto.ejercicio_final.fragments.AnimalItem
 
 
 class AnimalAdapter(private val items: ArrayList<AnimalItem>, private val listener: AnimalItemListener) : RecyclerView.Adapter<AnimalAdapter.UserViewHolder>() {

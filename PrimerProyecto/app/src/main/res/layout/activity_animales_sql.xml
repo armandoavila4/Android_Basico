@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ejercicio_final.almacenamiento.AnimalesSqlActivity">
+
+    <TextView
+        android:id="@+id/tAnimales"
+        android:textSize="25sp"
+        android:text="Mis Animales"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_height="wrap_content"/>
+
+    <FrameLayout
+        android:id="@+id/containerAnimalesSql"
+        android:layout_below="@id/tAnimales"
+        android:layout_above="@+id/btnAddAnimal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <Button
+        android:id="@+id/btnAddAnimal"
+        android:layout_alignParentBottom="true"
+        android:text="Agregar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+
+
+</RelativeLayout>
