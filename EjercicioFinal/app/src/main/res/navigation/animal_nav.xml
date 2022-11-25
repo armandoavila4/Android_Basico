@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/animal_nav"
+    app:startDestination="@id/animalesFragment">
+
+    <fragment
+        android:id="@+id/animalesFragment"
+        android:name="com.jaae.ejerciciofinal.view.fragments.AnimalesFragment"
+        android:label="Catálogo"
+        tools:layout="@layout/fragment_animales">
+        <action
+            android:id="@+id/action_animalesFragment_to_detalleAnimalFragment"
+            app:destination="@id/detalleAnimalFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/plantasFragment"
+        android:name="com.jaae.ejerciciofinal.view.fragments.PlantasFragment"
+        android:label="fragment_plantas"
+        tools:layout="@layout/fragment_plantas" />
+    <fragment
+        android:id="@+id/detalleAnimalFragment"
+        android:name="com.jaae.ejerciciofinal.view.fragments.DetalleAnimalFragment"
+        android:label="Detalle"
+        tools:layout="@layout/fragment_detalle_animal">
+        <argument
+            android:name="animal"
+            android:defaultValue="@null"
+            app:argType="com.jaae.ejerciciofinal.model.entities.Animal"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_detalleAnimalFragment_to_animalesFragment"
+            app:destination="@id/animalesFragment" />
+    </fragment>
+</navigation>

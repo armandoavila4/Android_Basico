@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="animal"
+            type="com.jaae.ejerciciofinal.model.entities.Animal" />
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        tools:context="com.jaae.ejerciciofinal.view.fragments.DetalleAnimalFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context=".ejercicio_final.almacenamiento.DetalleAnimalSqlActivity">
+
+            <TextView
+                android:id="@+id/txtTitleDetalle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/cardview_light_background"
+                android:gravity="center_horizontal"
+                android:text="Información"
+                android:textSize="25sp" />
+
+            <ImageView
+                android:id="@+id/ivImageDetalle"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/ic_photo_base" />
+
+            <TextView
+                android:id="@+id/txtNameDetalle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Nombre:"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/etNameDetalle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{animal.name}" />
+
+            <TextView
+                android:id="@+id/txtUrlDetalle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Url:"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/etUrlDetalle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{animal.url}" />
+
+            <TextView
+                android:id="@+id/txtWeightDetalle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Peso:"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/etWeightDetalle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="@{Double.toString(animal.weight)}" />
+
+            <TextView
+                android:id="@+id/txtDescriptionDetalle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Descripción:"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/etDescriptionDetalle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{animal.description}" />
+
+
+            <TextView
+                android:id="@+id/txtLocationDetalle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Continente:"
+                android:textSize="25sp" />
+
+            <Spinner
+                android:id="@+id/spinnerLocation"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp" />
+
+            <TextView
+                android:id="@+id/txtSexDetalle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Sexo:"
+                android:textSize="25sp" />
+
+
+            <RadioGroup
+                android:id="@+id/rgSex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp">
+                    <RadioButton
+                        android:id="@+id/radMacho"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:text="Macho" />
+
+                    <RadioButton
+                        android:id="@+id/radHembra"
+                        android:layout_marginLeft="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hembra" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:layout_marginBottom="60dp">
+
+                <Button
+                    android:id="@+id/btAddAnimalDetalle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:drawableLeft="@drawable/ic_save"
+                    android:text="Guardar" />
+
+                <Button
+                    android:id="@+id/btEditAnimal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:drawableLeft="@drawable/ic_edit"
+                    android:text="Editar" />
+
+                <Button
+                    android:id="@+id/btDeleteAnimal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:drawableLeft="@drawable/ic_delete"
+                    android:text="Eliminar" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</layout>
